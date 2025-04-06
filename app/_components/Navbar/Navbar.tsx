@@ -2,12 +2,14 @@ import Link from "next/link";
 import image from "../../../public/logo.png";
 import styles from "./Navbar.module.scss";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export interface INavbarProps {
 	isHomePage: boolean;
 }
 
 export const Navbar = (props: INavbarProps) => {
+	const router = useRouter();
 	return (
 		<nav className={styles.navbar}>
 			<div className={styles.navbar__logo_wrapper}>
@@ -20,18 +22,24 @@ export const Navbar = (props: INavbarProps) => {
 				/>
 			</div>
 			<span
+				onClick={() => {
+					router.push("/home");
+				}}
 				className={`${styles.navbar__home_button} ${
 					props.isHomePage ? styles.active_page : ""
 				}`}
 			>
-				<Link href="/home">Home</Link>
+				Home
 			</span>
 			<span
+				onClick={() => {
+					router.push("/cards");
+				}}
 				className={`${styles.navbar__characters_button} ${
 					props.isHomePage ? "" : styles.active_page
 				}`}
 			>
-				<Link href="/cards">Characters</Link>
+				Characters
 			</span>
 		</nav>
 	);
