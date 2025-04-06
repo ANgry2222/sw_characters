@@ -1,4 +1,4 @@
-import { useAppSelector } from "../_hooks/Redux";
+import { useAppSelector } from "../../_hooks/Redux";
 import CharacterStat from "../CharacterStat/CharacterStat";
 import styles from "./ModalCard.module.scss";
 import icon_male from "../../../public/icon_male.png";

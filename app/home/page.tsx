@@ -8,7 +8,7 @@ import yoda from "../../public/yoda.png";
 import cloud from "../../public/cloud.png";
 import Image from "next/image";
 
-export const HomePage = () => {
+export default function HomePage() {
 	const router = useRouter();
 
 	return (
@@ -61,6 +61,4 @@ export const HomePage = () => {
 			</section>
 		</div>
 	);
-};
-
-export default HomePage;
+}

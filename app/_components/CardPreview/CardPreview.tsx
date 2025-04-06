@@ -4,7 +4,7 @@ import CharacterStat, {
 	ICharacterStatProps,
 } from "../CharacterStat/CharacterStat";
 import styles from "./CardPreview.module.scss";
-import { useAppDispatch } from "../_hooks/Redux";
+import { useAppDispatch } from "../../_hooks/Redux";
 import { openModal } from "@/app/_store/slices/modalSlice";
 import { setCharacterShortInfo } from "@/app/_store/slices/modalSlice";
 
