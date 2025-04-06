@@ -1,3 +1,4 @@
+import Link from "next/link";
 import image from "../../../public/logo.png";
 import styles from "./Navbar.module.scss";
 import Image from "next/image";
@@ -23,14 +24,14 @@ export const Navbar = (props: INavbarProps) => {
 					props.isHomePage ? styles.active_page : ""
 				}`}
 			>
-				<a href="/home">Home</a>
+				<Link href="/home">Home</Link>
 			</span>
 			<span
 				className={`${styles.navbar__characters_button} ${
 					props.isHomePage ? "" : styles.active_page
 				}`}
 			>
-				<a href="/cards">Characters</a>
+				<Link href="/cards">Characters</Link>
 			</span>
 		</nav>
 	);
