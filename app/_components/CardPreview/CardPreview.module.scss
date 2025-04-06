@@ -1,0 +1,33 @@
+.card_container {
+	border-radius: 8px;
+	background-color: #f0f0f0;
+	padding: 5px 25px;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+	box-sizing: border-box;
+	flex-basis: 30%;
+}
+
+.card_preview__name {
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 100%;
+}
+
+.card_preview__stats_section {
+	margin: 12px 0;
+	display: flex;
+	flex-direction: row;
+	gap: 12px;
+}
+
+.card_preview__stats_section div {
+	padding-left: 0;
+}
+
+.card_preview__tags_section {
+	display: flex;
+	flex-direction: row;
+	gap: 8px;
+}

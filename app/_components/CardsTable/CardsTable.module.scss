@@ -1,0 +1,9 @@
+.table_container {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 45px;
+	margin: 10px 0;
+	justify-content: space-between;
+	column-gap: 20px;
+	align-items: left;
+}
