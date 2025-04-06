@@ -10,7 +10,7 @@ import store from "../_store/store";
 import Modal from "../_components/Modal/Modal";
 import IApiCharacter from "../_interfaces/IApiCharacter";
 
-export const CardsPage = () => {
+export default function CardsPage() {
 	const [isLoading, setIsLoading] = useState<boolean>(true);
 	const [data, setData] = useState<Array<IApiCharacter>>([]);
 	const [options, setOptions] = useState<Array<string>>([]);
@@ -158,6 +158,4 @@ export const CardsPage = () => {
 			</div>
 		</Provider>
 	);
-};
-
-export default CardsPage;
+}

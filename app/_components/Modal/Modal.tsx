@@ -1,6 +1,6 @@
 import { KeyboardEvent, MouseEvent, useEffect, useRef } from "react";
 import styles from "./Modal.module.scss";
-import { useAppDispatch, useAppSelector } from "../_hooks/Redux";
+import { useAppDispatch, useAppSelector } from "../../_hooks/Redux";
 import { closeModal } from "@/app/_store/slices/modalSlice";
 import { createPortal } from "react-dom";
 import ModalCard from "../ModalCard/ModalCard";

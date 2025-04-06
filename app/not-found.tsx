@@ -6,7 +6,7 @@ import image from "../public/teamRocket.png";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 
-export const Custom404 = () => {
+export default function Custom404() {
 	const router = useRouter();
 
 	return (
@@ -42,6 +42,4 @@ export const Custom404 = () => {
 			</div>
 		</div>
 	);
-};
-
-export default Custom404;
+}
