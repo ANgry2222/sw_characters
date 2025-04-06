@@ -1,4 +1,3 @@
-import Link from "next/link";
 import image from "../../../public/logo.png";
 import styles from "./Navbar.module.scss";
 import Image from "next/image";
